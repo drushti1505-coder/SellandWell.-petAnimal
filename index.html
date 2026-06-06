@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial;
+
+        }
+
+        .animal{
+            display: flex;
+            gap: 15px;
+            justify-content:center ;
+            flex-wrap: wrap;
+        }
+
+        .animal img{
+            width: 150px !important;
+            height: 150px !important;
+            object-fit: cover;
+            margin: 10px;
+        }
+        h1{
+            color: darkseagreen;
+        }
+        p{
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>SellAndWell.pet Animal</h1>
+    <p>Buy and Sell animals confidently</p>
+    <input type="text" id="searchBox"placeholder="search Animal">
+    <button onclick="searchAnimal()">Search</button>
+
+    <div  id="results"></div>
+
+    <div class="animal">
+        <img src="sheep.jpg"   >
+        
+
+        <img src="horse.webp"  >
+        
+        
+        <img src="abc.webp"    >
+
+        
+
+
+    </div>
+    
+<div id="results"></div>
+
+<script>
+function searchAnimal() {
+    let animal = document.getElementById("searchBox").value.toLowerCase();
+    let results = document.getElementById("results");
+
+    if (animal === "goat") {
+        results.innerHTML = `
+            <img src="aa.jpg" width="200">
+            <h3>Goat</h3>
+            <p>For Sale</p>
+            <p>Pravin Mane</P>
+            <p>malgoan</p>
+            <p>9226552619</p>
+        `;
+    }
+    else if (animal === "cow") {
+        results.innerHTML = `
+            <img src="cow.jpg" width="200">
+            <h3>Cow</h3>
+            <p>For Sale</p>
+        `;
+    }
+    else {
+        results.innerHTML = "<p>No animals found.</p>";
+    }
+}
+</script>
+ Pravin Mane:  <p>contact for sell:8421920583</p> <h2>Sell Your Animal</h2>
+
+<form id="animalForm">
+    <input type="text" id="animalName" placeholder="Animal Name" required><br><br>
+
+    <input type="number" id="price" placeholder="Price" required><br><br>
+
+    <input type="text" id="phone" placeholder="Phone Number" required><br><br>
+
+    <input type="file" id="photo" accept="image/*" required><br><br>
+
+    <button type="submit">Add Animal</button>
+</form>
+
+<div id="animalList"></div>
+
+
+
+
+
+
+
+</body>
+</html>
