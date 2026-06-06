@@ -64,6 +64,9 @@ function searchAnimal() {
     if (animal === "goat") {
         results.innerHTML = `
             <img src="aa.jpg" width="200">
+             <img src="drushti.jpg" width="200">
+
+             
             <h3>Goat</h3>
             <p>For Sale</p>
             <p>Pravin Mane</P>
@@ -71,16 +74,8 @@ function searchAnimal() {
             <p>9226552619</p>
         `;
     }
-    else if (animal === "cow") {
-        results.innerHTML = `
-            <img src="drushti.jpg" width="200">
-            <h3>goat</h3>
-            <p>For Sale</p>
-            <p>Pravin Mane</p>
-            <p>Malgoan</p>
-            <p>9226552619</P>
-        `;
-    }
+   
+           
     else {
         results.innerHTML = "<p>No animals found.</p>";
     }
