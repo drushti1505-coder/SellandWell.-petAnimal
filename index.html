@@ -78,7 +78,10 @@
     <div  id="results"></div>
 
     <div class="animal">
-        <img src="sheep.jpg"  >
+        <img src="sheep.jpg" onclick="showMoreSheep()" >
+        <div id="moreSheep" style="display:none;">
+            <img src="goat1.jpg">
+            <img src="goat2.jpg">
         
 
         <img src="horse.webp"  >
@@ -162,6 +165,14 @@ function searchAnimal() {
 
 
 
+<script>
+    funcation showMoreSheep() {
+        document.getElementById("moreSheep").style.display = "bloc";
+    }
+</script>
+</script>
 
+
+    
 </body>
 </html>
